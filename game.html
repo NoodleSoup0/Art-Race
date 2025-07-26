@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>ArtRace | Game</title>
+  <link rel="stylesheet" href="asset/css/style.css" />
+</head>
+<body>
+  <nav aria-label="Main navigation">
+    <a href="index.html">Home</a>
+    <a href="game.html">Game</a>
+    <a href="instructions.html">How to Play</a>
+    <a href="about.html">About</a>
+
+    <div id="font-size-controls" style="text-align:center; margin: 1rem 0;">
+      <button id="decrease-font" aria-label="Decrease font size">A-</button>
+      <button id="increase-font" aria-label="Increase font size">A+</button>
+    </div>
+
+
+  </nav>
+  <main class="centered-main full-height spaced-text">
+    <div class="game-top">
+      <img src="asset/images/night-watch.jpg" 
+        alt="The Night Watch by Rembrandt van Rijn" 
+        tabindex="0"
+        aria-label="View The Night Watch by Rembrandt in full size"
+        class="target-image" />
+      <div class="painting-info">
+        <p><strong>Current:</strong> “The Night Watch” by Rembrandt van Rijn</p>
+        <p><strong>Target:</strong> “The Persistence of Memory”, Salvador Dalí</p>
+      </div>
+      <div class="tracker">
+        <h2>Track Your Steps</h2>
+        <div class="tracker-scroll" tabindex="0">
+          <div class="circle">1</div>
+          <p>"The Night Watch" by Rembrandt van Rijn</p>
+          <div class="circle">?</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="game-bottom">
+      <!-- Choice 1 -->
+      <div class="choice">
+        <img src="asset/images/sample1.jpg" 
+             alt="Las Meninas by Diego Velázquez"
+             aria-label="View Las Meninas by Diego Velázquez in full size"
+             tabindex="0" />
+        <p class="title">Las Meninas</p>
+        <p class="artist">Diego Velázquez</p>
+        <p class="link-type">Style (Contemporary)</p>
+      </div>
+      <!-- Choice 2 -->
+      <div class="choice">
+        <img src="asset/images/sample2.jpg" 
+             alt="Girl with a Pearl Earring by Johannes Vermeer"
+             aria-label="View Girl with a Pearl Earring by Johannes Vermeer in full size"
+             tabindex="0" />
+        <p class="title">Girl with a Pearl Earring</p>
+        <p class="artist">Johannes Vermeer</p>
+        <p class="link-type">Influence</p>
+      </div>
+      <!-- Choice 3 -->
+      <div class="choice">
+        <img src="asset/images/sample3.jpg" 
+             alt="The Hay Wain by John Constable"
+             tabindex="0"
+             aria-label="View The Hay Wain by John Constable in full size" />
+        <p class="title">The Hay Wain</p>
+        <p class="artist">John Constable</p>
+        <p class="link-type">Era</p>
+      </div>
+      <!-- Choice 4 -->
+      <div class="choice">
+        <img src="asset/images/sample4.jpg" 
+             alt="The Goldfinch by Carel Fabritius"
+             tabindex="0"
+             aria-label="View The Goldfinch by Carel Fabritius in full size" />
+        <p class="title">The Goldfinch</p>
+        <p class="artist">Carel Fabritius</p>
+        <p class="link-type">Student</p>
+      </div>
+    </div>
+  </main>
+  <script src="asset/js/main.js"></script>
+</body>
+</html>
